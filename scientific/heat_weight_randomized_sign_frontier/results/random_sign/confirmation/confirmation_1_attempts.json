@@ -1,0 +1,1737 @@
+{
+  "point": {
+    "n": 30,
+    "parameters": {
+      "tau": ".8125",
+      "lam": ".11",
+      "eta": ".21875"
+    }
+  },
+  "attempts": [
+    {
+      "method": "linear",
+      "g": 1,
+      "precision": {
+        "c": 28,
+        "g": 1,
+        "p": 23,
+        "round_bits": 21,
+        "merge_small_cut": 10
+      },
+      "bias": "8938257323790218195791187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 2,
+      "precision": {
+        "c": 28,
+        "g": 2,
+        "p": 23,
+        "round_bits": 20,
+        "merge_small_cut": 10
+      },
+      "bias": "2239522214413605434191187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 3,
+      "precision": {
+        "c": 28,
+        "g": 3,
+        "p": 23,
+        "round_bits": 19,
+        "merge_small_cut": 10
+      },
+      "bias": "564838437069452243791187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 4,
+      "precision": {
+        "c": 28,
+        "g": 4,
+        "p": 23,
+        "round_bits": 18,
+        "merge_small_cut": 10
+      },
+      "bias": "146167492733413946191187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 5,
+      "precision": {
+        "c": 28,
+        "g": 5,
+        "p": 23,
+        "round_bits": 17,
+        "merge_small_cut": 10
+      },
+      "bias": "41499756649404371791187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 6,
+      "precision": {
+        "c": 28,
+        "g": 6,
+        "p": 23,
+        "round_bits": 16,
+        "merge_small_cut": 10
+      },
+      "bias": "15332822628401978191187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 976266487,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "117316242294843374715052683138050898085869629024914929999280272590780660730225106866689412904151496955461191626226665137/59029581035870565171200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 976262259
+      },
+      "complete_totals": {
+        "T_count": 976266487,
+        "nonoracle_gates": 3179772316,
+        "T_depth_upper": 750014314,
+        "nonoracle_depth_upper": 2511909505,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 312,
+        "referenced_width_upper": 312,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 74,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 17025,
+            "iterate_T_depth": 13079,
+            "iterate_nonoracle_depth": 43805,
+            "iterate_width": 299,
+            "source_seed_bits": 74,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 539,
+                  "cx": 13339,
+                  "h": 3796,
+                  "t": 3796,
+                  "tdg": 3796
+                },
+                "expanded_counts": {
+                  "x": 539,
+                  "cx": 13339,
+                  "h": 3796,
+                  "t": 3796,
+                  "tdg": 3796
+                },
+                "T_count": 7592,
+                "depth_including_opaque_query_layers": 20213,
+                "T_depth_conservative_scheduled": 5872,
+                "width": 299,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 25266,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 3796,
+                  "t": 3796,
+                  "cx": 13339,
+                  "tdg": 3796,
+                  "x": 539
+                },
+                "expanded_counts": {
+                  "h": 3796,
+                  "t": 3796,
+                  "cx": 13339,
+                  "tdg": 3796,
+                  "x": 539
+                },
+                "T_count": 7592,
+                "depth_including_opaque_query_layers": 20213,
+                "T_depth_conservative_scheduled": 5872,
+                "width": 299,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 25266,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 299,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 320,
+                  "h": 1592,
+                  "t": 900,
+                  "cx": 604,
+                  "tdg": 899,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 320,
+                  "h": 1592,
+                  "t": 900,
+                  "cx": 604,
+                  "tdg": 899,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 1799,
+                "depth_including_opaque_query_layers": 3384,
+                "T_depth_conservative_scheduled": 1338,
+                "width": 299,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 4820,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1597
+        }
+      },
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 7,
+      "precision": {
+        "c": 28,
+        "g": 7,
+        "p": 23,
+        "round_bits": 15,
+        "merge_small_cut": 10
+      },
+      "bias": "8791089123151379791187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 1567066935,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "114045375542218075515052683138050898085869629024914929999280272590780660730225106866689412904151496955461191626226665137/59029581035870565171200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 1567062707
+      },
+      "complete_totals": {
+        "T_count": 1567066935,
+        "nonoracle_gates": 5319245127,
+        "T_depth_upper": 1309164738,
+        "nonoracle_depth_upper": 4550813225,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 313,
+        "referenced_width_upper": 313,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 73,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 27329,
+            "iterate_T_depth": 22831,
+            "iterate_nonoracle_depth": 79365,
+            "iterate_width": 300,
+            "source_seed_bits": 73,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 795,
+                  "cx": 24018,
+                  "h": 6374,
+                  "t": 6374,
+                  "tdg": 6374
+                },
+                "expanded_counts": {
+                  "x": 795,
+                  "cx": 24018,
+                  "h": 6374,
+                  "t": 6374,
+                  "tdg": 6374
+                },
+                "T_count": 12748,
+                "depth_including_opaque_query_layers": 38001,
+                "T_depth_conservative_scheduled": 10750,
+                "width": 300,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 43935,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 6374,
+                  "t": 6374,
+                  "cx": 24018,
+                  "tdg": 6374,
+                  "x": 795
+                },
+                "expanded_counts": {
+                  "h": 6374,
+                  "t": 6374,
+                  "cx": 24018,
+                  "tdg": 6374,
+                  "x": 795
+                },
+                "T_count": 12748,
+                "depth_including_opaque_query_layers": 38001,
+                "T_depth_conservative_scheduled": 10750,
+                "width": 300,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 43935,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 300,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 316,
+                  "h": 1586,
+                  "t": 896,
+                  "cx": 598,
+                  "tdg": 895,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 316,
+                  "h": 1586,
+                  "t": 896,
+                  "cx": 598,
+                  "tdg": 895,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 1791,
+                "depth_including_opaque_query_layers": 3368,
+                "T_depth_conservative_scheduled": 1334,
+                "width": 300,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 4796,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1596
+        }
+      },
+      "bias_components": {}
+    },
+    {
+      "method": "linear",
+      "g": 8,
+      "precision": {
+        "c": 28,
+        "g": 8,
+        "p": 23,
+        "round_bits": 14,
+        "merge_small_cut": 10
+      },
+      "bias": "7155655746838730191187732633290930807609941618804160049221365284944690619667623185359797602935458355947975341480085169/118059162071741130342400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 2745915655,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "113227658854061750715052683138050898085869629024914929999280272590780660730225106866689412904151496955461191626226665137/59029581035870565171200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 2745911427
+      },
+      "complete_totals": {
+        "T_count": 2745915655,
+        "nonoracle_gates": 9596470646,
+        "T_depth_upper": 2426318846,
+        "nonoracle_depth_upper": 8632175559,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 314,
+        "referenced_width_upper": 314,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 72,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 47889,
+            "iterate_T_depth": 42315,
+            "iterate_nonoracle_depth": 150547,
+            "iterate_width": 301,
+            "source_seed_bits": 72,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 1307,
+                  "cx": 45391,
+                  "h": 11516,
+                  "t": 11516,
+                  "tdg": 11516
+                },
+                "expanded_counts": {
+                  "x": 1307,
+                  "cx": 45391,
+                  "h": 11516,
+                  "t": 11516,
+                  "tdg": 11516
+                },
+                "T_count": 23032,
+                "depth_including_opaque_query_layers": 73592,
+                "T_depth_conservative_scheduled": 20496,
+                "width": 301,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 81246,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 11516,
+                  "t": 11516,
+                  "cx": 45391,
+                  "tdg": 11516,
+                  "x": 1307
+                },
+                "expanded_counts": {
+                  "h": 11516,
+                  "t": 11516,
+                  "cx": 45391,
+                  "tdg": 11516,
+                  "x": 1307
+                },
+                "T_count": 23032,
+                "depth_including_opaque_query_layers": 73592,
+                "T_depth_conservative_scheduled": 20496,
+                "width": 301,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 81246,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 301,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 312,
+                  "h": 1580,
+                  "t": 892,
+                  "cx": 592,
+                  "tdg": 891,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 312,
+                  "h": 1580,
+                  "t": 892,
+                  "cx": 592,
+                  "tdg": 891,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 1783,
+                "depth_including_opaque_query_layers": 3368,
+                "T_depth_conservative_scheduled": 1326,
+                "width": 301,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 4772,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1595
+        }
+      },
+      "bias_components": {}
+    },
+    {
+      "method": "nodes",
+      "g": 1,
+      "precision": {
+        "c": 28,
+        "g": 1,
+        "p": 23,
+        "round_bits": 21,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "191425954134026541992057499099613821077506758440998960385538163758367073132685631605374784851002077145573649/171992678400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": false,
+      "reason": "raw bias cap",
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "15616117308540925/14774058577588912128",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 2,
+      "precision": {
+        "c": 28,
+        "g": 2,
+        "p": 23,
+        "round_bits": 20,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "290128371809095401014774811922213133885544760992869527199739918286875398141047410391534008990791910585656318743/2890680945868800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 619859695,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "25488955182494168343003476029068656678701032168413599433222723775626878085932829307011680638248550326988608015083082247607547863/13018469630661720598658206924800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 619855467
+      },
+      "complete_totals": {
+        "T_count": 619859695,
+        "nonoracle_gates": 1763434050,
+        "T_depth_upper": 358631952,
+        "nonoracle_depth_upper": 1010826845,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 364,
+        "referenced_width_upper": 364,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 118,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 10809,
+            "iterate_T_depth": 6253,
+            "iterate_nonoracle_depth": 17625,
+            "iterate_width": 351,
+            "source_seed_bits": 118,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 491,
+                  "cx": 5434,
+                  "h": 2154,
+                  "t": 2154,
+                  "tdg": 2154
+                },
+                "expanded_counts": {
+                  "x": 491,
+                  "cx": 5434,
+                  "h": 2154,
+                  "t": 2154,
+                  "tdg": 2154
+                },
+                "T_count": 4308,
+                "depth_including_opaque_query_layers": 6808,
+                "T_depth_conservative_scheduled": 2327,
+                "width": 351,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 12387,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 2154,
+                  "t": 2154,
+                  "cx": 5434,
+                  "tdg": 2154,
+                  "x": 491
+                },
+                "expanded_counts": {
+                  "h": 2154,
+                  "t": 2154,
+                  "cx": 5434,
+                  "tdg": 2154,
+                  "x": 491
+                },
+                "T_count": 4308,
+                "depth_including_opaque_query_layers": 6808,
+                "T_depth_conservative_scheduled": 2327,
+                "width": 351,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 12387,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 351,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 496,
+                  "h": 1856,
+                  "t": 1076,
+                  "cx": 868,
+                  "tdg": 1075,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 496,
+                  "h": 1856,
+                  "t": 1076,
+                  "cx": 868,
+                  "tdg": 1075,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2151,
+                "depth_including_opaque_query_layers": 4014,
+                "T_depth_conservative_scheduled": 1602,
+                "width": 351,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5876,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1641
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "1101829798874097538221383/24830760251353684613529600000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 3,
+      "precision": {
+        "c": 28,
+        "g": 3,
+        "p": 23,
+        "round_bits": 19,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "2444252064397326337439659866315691290778377237221916131912414875211088084658730938072473229184397862755466215482655427931707/42003610315815733410476851200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 723066295,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "362394099961349334618064109953414012051195994897185653496257290928228682236711644493938960598425977797385724183276591694609535283514174830587/189167443766523258795723450922102533862195200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 723062067
+      },
+      "complete_totals": {
+        "T_count": 723066295,
+        "nonoracle_gates": 2151834867,
+        "T_depth_upper": 458857028,
+        "nonoracle_depth_upper": 1387874957,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 366,
+        "referenced_width_upper": 366,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 115,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 12609,
+            "iterate_T_depth": 8001,
+            "iterate_nonoracle_depth": 24201,
+            "iterate_width": 353,
+            "source_seed_bits": 115,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 531,
+                  "cx": 7449,
+                  "h": 2610,
+                  "t": 2610,
+                  "tdg": 2610
+                },
+                "expanded_counts": {
+                  "x": 531,
+                  "cx": 7449,
+                  "h": 2610,
+                  "t": 2610,
+                  "tdg": 2610
+                },
+                "T_count": 5220,
+                "depth_including_opaque_query_layers": 10117,
+                "T_depth_conservative_scheduled": 3209,
+                "width": 353,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 15810,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 2610,
+                  "t": 2610,
+                  "cx": 7449,
+                  "tdg": 2610,
+                  "x": 531
+                },
+                "expanded_counts": {
+                  "h": 2610,
+                  "t": 2610,
+                  "cx": 7449,
+                  "tdg": 2610,
+                  "x": 531
+                },
+                "T_count": 5220,
+                "depth_including_opaque_query_layers": 10117,
+                "T_depth_conservative_scheduled": 3209,
+                "width": 353,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 15810,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 353,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 484,
+                  "h": 1838,
+                  "t": 1064,
+                  "cx": 850,
+                  "tdg": 1063,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 484,
+                  "h": 1838,
+                  "t": 1064,
+                  "cx": 850,
+                  "tdg": 1063,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2127,
+                "depth_including_opaque_query_layers": 3972,
+                "T_depth_conservative_scheduled": 1586,
+                "width": 353,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5804,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1638
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "1015235714853631208576483862446517859/461834579508113424794246706352789389312000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 4,
+      "precision": {
+        "c": 28,
+        "g": 4,
+        "p": 23,
+        "round_bits": 18,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "2780638053635314214493203114956253942685014798726931624289715760589687335174417461399190042718860457511794016184134910143116461406738161051252915597299466623/49552816865112748290013765556370988418383767841450178563276800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 936359935,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "427062827544618950577273585525723530308534111698735394304564718829750934458274087546836177901186239438859270790219872190421098409160505868671143750968672164410270261307514943/223166047568880202949107695174994770998227682518667131766842717734733401292800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 936355707
+      },
+      "complete_totals": {
+        "T_count": 936359935,
+        "nonoracle_gates": 2928636522,
+        "T_depth_upper": 663435444,
+        "nonoracle_depth_upper": 2135090741,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 368,
+        "referenced_width_upper": 368,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 112,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 16329,
+            "iterate_T_depth": 11569,
+            "iterate_nonoracle_depth": 37233,
+            "iterate_width": 355,
+            "source_seed_bits": 112,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 619,
+                  "cx": 11363,
+                  "h": 3546,
+                  "t": 3546,
+                  "tdg": 3546
+                },
+                "expanded_counts": {
+                  "x": 619,
+                  "cx": 11363,
+                  "h": 3546,
+                  "t": 3546,
+                  "tdg": 3546
+                },
+                "T_count": 7092,
+                "depth_including_opaque_query_layers": 16657,
+                "T_depth_conservative_scheduled": 5003,
+                "width": 355,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 22620,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 3546,
+                  "t": 3546,
+                  "cx": 11363,
+                  "tdg": 3546,
+                  "x": 619
+                },
+                "expanded_counts": {
+                  "h": 3546,
+                  "t": 3546,
+                  "cx": 11363,
+                  "tdg": 3546,
+                  "x": 619
+                },
+                "T_count": 7092,
+                "depth_including_opaque_query_layers": 16657,
+                "T_depth_conservative_scheduled": 5003,
+                "width": 355,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 22620,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 355,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 472,
+                  "h": 1820,
+                  "t": 1052,
+                  "cx": 832,
+                  "tdg": 1051,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 472,
+                  "h": 1820,
+                  "t": 1052,
+                  "cx": 832,
+                  "tdg": 1051,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2103,
+                "depth_including_opaque_query_layers": 3924,
+                "T_depth_conservative_scheduled": 1566,
+                "width": 355,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5732,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1635
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "165389709779005668745768507448962350590175313827416348749681626330360889787/1362097458306153582453049897308317694080979507560224192912858384611409920000000000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 5,
+      "precision": {
+        "c": 28,
+        "g": 5,
+        "p": 23,
+        "round_bits": 17,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "22330335154680281299253891896157470755672713001963773134567089319332769534109010345781639091342160477644475555038725519565129935354916253392556612950258954469494905500035811811151738558530130002908935881277680054863231973/398753621315358710341778842477622108723266353567595932485915799680217729265237524449186033953923264564952951716108938693836800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 1369827655,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "3436387444207726318024042632515791227504993857780951944779070463879351262328449518234737018783226101869141049094867237307306193292735844653648049082300761789841184116659108774842232320308914296394493793516718572403643692763482472747424293/1795826660368485358949291378245498378715644876942210451761667600795537144916032646997611044826823778317137184449474034991940777029185359052800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 1369823427
+      },
+      "complete_totals": {
+        "T_count": 1369827655,
+        "nonoracle_gates": 4508729547,
+        "T_depth_upper": 1077408584,
+        "nonoracle_depth_upper": 3650163629,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 370,
+        "referenced_width_upper": 370,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 109,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 23889,
+            "iterate_T_depth": 18789,
+            "iterate_nonoracle_depth": 63657,
+            "iterate_width": 357,
+            "source_seed_bits": 109,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 803,
+                  "cx": 19306,
+                  "h": 5442,
+                  "t": 5442,
+                  "tdg": 5442
+                },
+                "expanded_counts": {
+                  "x": 803,
+                  "cx": 19306,
+                  "h": 5442,
+                  "t": 5442,
+                  "tdg": 5442
+                },
+                "T_count": 10884,
+                "depth_including_opaque_query_layers": 29890,
+                "T_depth_conservative_scheduled": 8621,
+                "width": 357,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 36435,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 5442,
+                  "t": 5442,
+                  "cx": 19306,
+                  "tdg": 5442,
+                  "x": 803
+                },
+                "expanded_counts": {
+                  "h": 5442,
+                  "t": 5442,
+                  "cx": 19306,
+                  "tdg": 5442,
+                  "x": 803
+                },
+                "T_count": 10884,
+                "depth_including_opaque_query_layers": 29890,
+                "T_depth_conservative_scheduled": 8621,
+                "width": 357,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 36435,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 357,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 460,
+                  "h": 1802,
+                  "t": 1040,
+                  "cx": 814,
+                  "tdg": 1039,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 460,
+                  "h": 1802,
+                  "t": 1040,
+                  "cx": 814,
+                  "tdg": 1039,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2079,
+                "depth_including_opaque_query_layers": 3882,
+                "T_depth_conservative_scheduled": 1550,
+                "width": 357,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5660,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1632
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "2498494681622627597233378842186094287371770903863743481357206568296130834579419257006837540670687748414082172638892266289723279879400058937/350747394603219796669783472313573902092899390027775478859700703280378348616412626366720907192739019202565856337787897459363433013512765440000000000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 6,
+      "precision": {
+        "c": 28,
+        "g": 6,
+        "p": 23,
+        "round_bits": 16,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "41047140886446109124401218186902165077557246491052340996438623887703240990852893357792500140521388536490875766626615866683007037446539621362036937827968482913770266579855512838399854482711751001522961209460543782156887095829871010015979157932729271561260215991901732635292539616533689725377076804430472657818450484594304601358913994889798076370262848838111/733067917091209876898479517166399431364111611009911700129693278206660863351053333235187618822170737163328345854798602165855772172227626524611568804212982782758146323922007106617427452849493838510623285236648042797271979694635101789318206267561376645698787737600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 2243643535,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "6317426203585052114609014983038181707857657823374056085162161298294980427814872818866820760060044969736174854419814004662289827295361231657673855875803416254475582924008553120624858024672247952600060378672380305529648215348070379693298361457569749194793289498975125399045630106700032709147756319206849528296655304245519491311342312085053899256635961631175035921513906696351/3301444398249238457589333164929115643216507476253285321439750744607175933905756784843209519152850383242219545906262479700088910598682218742057614303400913084672703084707334562881403453325870939826167332122114616959111277634528297708424033003433716210481991411132351936829849600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 2243639307
+      },
+      "complete_totals": {
+        "T_count": 2243643535,
+        "nonoracle_gates": 7680153670,
+        "T_depth_upper": 1909483128,
+        "nonoracle_depth_upper": 6684667017,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 372,
+        "referenced_width_upper": 372,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 106,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 39129,
+            "iterate_T_depth": 33301,
+            "iterate_nonoracle_depth": 116581,
+            "iterate_width": 359,
+            "source_seed_bits": 106,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 1179,
+                  "cx": 35174,
+                  "h": 9258,
+                  "t": 9258,
+                  "tdg": 9258
+                },
+                "expanded_counts": {
+                  "x": 1179,
+                  "cx": 35174,
+                  "h": 9258,
+                  "t": 9258,
+                  "tdg": 9258
+                },
+                "T_count": 18516,
+                "depth_including_opaque_query_layers": 56376,
+                "T_depth_conservative_scheduled": 15887,
+                "width": 359,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 64127,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 9258,
+                  "t": 9258,
+                  "cx": 35174,
+                  "tdg": 9258,
+                  "x": 1179
+                },
+                "expanded_counts": {
+                  "h": 9258,
+                  "t": 9258,
+                  "cx": 35174,
+                  "tdg": 9258,
+                  "x": 1179
+                },
+                "T_count": 18516,
+                "depth_including_opaque_query_layers": 56376,
+                "T_depth_conservative_scheduled": 15887,
+                "width": 359,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 64127,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 359,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 448,
+                  "h": 1784,
+                  "t": 1028,
+                  "cx": 796,
+                  "tdg": 1027,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 448,
+                  "h": 1784,
+                  "t": 1028,
+                  "cx": 796,
+                  "tdg": 1027,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2055,
+                "depth_including_opaque_query_layers": 3834,
+                "T_depth_conservative_scheduled": 1530,
+                "width": 359,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5588,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1629
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "27803810466533865859750327096236901103813782476124615293234795017760793480056502307891160611988028603788730265632809464304021648743693599900918287323733684920689019583691872280908119821543836647434280972604681208876421064770571894728769366355622598248915339092879319964836045591/64481335903305438624791663377521789906572411645571978934370131730608904959096812203968935920954109047699600505981689056642361535130512084805812779363299083685013732123190128181277411197770916793479830705510051112482642141299380814617656894598314769735976394748678748766208000000000000000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 7,
+      "precision": {
+        "c": 28,
+        "g": 7,
+        "p": 23,
+        "round_bits": 15,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "51857434527901955542034217885014391185622137391357051747212321060507942146264231424164831964961628987117206604617719416220619375293513894922702252659121202838912105002097686765099887125256432677916424978802667636502516404768823925172571210626927281387752410776426439552365978278631477616905584556902835341983291199743671483681374140509336401306320952022471881082595314696304974909279102354690115656789067126130679557697570134718379453877463858170989272038037332258937880873856499665159414308260529012644687769531300999582687230397063955364540933221885144834906150754064866485278078801754118413443142068786504907328694530411/926137434441339990804218590740332504138610346708031078253179494388677013611486261379902966731524232572782926516741205907470718718639387129020344701591374708538109020566986360964977449881936026248668565919829156629640058518726646355123281305403747240160958645570719234995548841343092928793355375757099837648065312389190465298110851804453607824684389363451384214561905199770504388977623391933105804612588265322800430540079955690340599325961005218685466423031655561438512155104096462920056487342071167919368929861672127608363417600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 3998155735,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "7981257307824389558067029896482696643746338146906319664929411347802022581767494078329444698989422825385272739193222789817892344468739003449149982606379362139114027310543323269887260470147843461029574232607448893532256908506402138321151157439226567942821852100968646475981958864604035458309834657384843350834804197032618801607721662423508014158156608231948414330832536961980867965375524425102452473093469359849782953149404660596560189537140733898024388440555221592645891202587807321277725331798016694098334555905579708989637735076208802508810925445569925385092905020847213791090016744853323719317574239945641101451707883300700502652592420651/4170952204643885950876840976517626890489551745185968020939365664861384381477190728501156720164494472518409240284049887323161875158580533224145643647251863074350259464325350343439945982143778567122823732704194210700004567903850620160848266794020144385718039513645390883197048302221946356662343388084342664730089959596854264327473986622278423288195741214576688902935968272054131680695660413355063666822435359398086555524779765310571913890802865207288168602588478763554495184052497975996233050338711181583412278029870266531351966174193447967129600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 3998151507
+      },
+      "complete_totals": {
+        "T_count": 3998155735,
+        "nonoracle_gates": 14074949259,
+        "T_depth_upper": 3578448524,
+        "nonoracle_depth_upper": 12799772741,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 374,
+        "referenced_width_upper": 374,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 103,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 69729,
+            "iterate_T_depth": 62409,
+            "iterate_nonoracle_depth": 223233,
+            "iterate_width": 361,
+            "source_seed_bits": 103,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 1939,
+                  "cx": 67247,
+                  "h": 16914,
+                  "t": 16914,
+                  "tdg": 16914
+                },
+                "expanded_counts": {
+                  "x": 1939,
+                  "cx": 67247,
+                  "h": 16914,
+                  "t": 16914,
+                  "tdg": 16914
+                },
+                "T_count": 33828,
+                "depth_including_opaque_query_layers": 109723,
+                "T_depth_conservative_scheduled": 30449,
+                "width": 361,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 119928,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 16914,
+                  "t": 16914,
+                  "cx": 67247,
+                  "tdg": 16914,
+                  "x": 1939
+                },
+                "expanded_counts": {
+                  "h": 16914,
+                  "t": 16914,
+                  "cx": 67247,
+                  "tdg": 16914,
+                  "x": 1939
+                },
+                "T_count": 33828,
+                "depth_including_opaque_query_layers": 109723,
+                "T_depth_conservative_scheduled": 30449,
+                "width": 361,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 119928,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 361,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 436,
+                  "h": 1766,
+                  "t": 1016,
+                  "cx": 778,
+                  "tdg": 1015,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 436,
+                  "h": 1766,
+                  "t": 1016,
+                  "cx": 778,
+                  "tdg": 1015,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2031,
+                "depth_including_opaque_query_layers": 3792,
+                "T_depth_conservative_scheduled": 1514,
+                "width": 361,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5516,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1626
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "39373369310222108229364299229121093786018524024554850352734023980504142280993645228220911878133422580864525596728535541354350889351518000266143215138323841414493927798019365759683467252377596926048213644210748506344609195939771499367937586232847298683493432570995375385634225216764656508355211963549684214772434700679592504859107779254075283941125718277800918161707538111446844267774234478164133410405487108280225867320856086350825078442464110312198534330261913123303076562899249686111848159243815260728684051806091116398657698743450210397535687/1303422563951214359649012805161758403277984920370615006543551770269182619211622102656611475051404522662002887588765589788488085987056416632545513639766207210734456082601671982324983119419930802225882416470060690843751427469953318800265083373131295120536887348014184650999077594444358236456982308776357082728153112374016957602335620819462007277561169129555215282167490085016916150217393879173457395882011049811902048601493676659553723090875895377277552688308899613610779745016405617498822828230847244244816336884334458291047489429435452489728000000000000000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "method": "nodes",
+      "g": 8,
+      "precision": {
+        "c": 28,
+        "g": 8,
+        "p": 23,
+        "round_bits": 14,
+        "merge_small_cut": 10,
+        "endpoint_layout": "shared"
+      },
+      "bias": "1575864675469344716538564685678913632048825321312689163302267248040374908087430578869564466192378896225383559196604960350522006383408456100007522380178585359054044171238615324642198884408330907855638916930831737180696834352481442085820785760789318564630135721092123287859837809603372230334248231015096688798870125397924527495365921459407904454928517064280362027042652093005235066741177840819427844435557949379829174647520904530182455491778074374730663316112743038394764967763032261163867242831460069400196707868554126289690882970148987103854909409251498985838148179940927013871561483053477019633529545718935550148844945776132867331849378705261577055929876766200579969475843070116500675409761352939126011141143929218724765179626439818877051942059963922288683278103514436874728206585181390537622363969654477924031099647865676266626152224693127089523148808792623602252806955202936162555326122592593119578338936589063361568170956078212320018631092353708627460915083824552094447617271013132825672937074348507818564965420398746668426864751126544963637202670413174290880915615729446643380706116947784331527411773588620232129417658990260330694163425994276349637456008258170569154520235790996841743971/28143852724614506466406855226167037515493887514722435043707653168310243383605743842025837145346660786337947753673373789004212678514824585547666057253473041471106088296128279667614590213158425382577325177178383597978149716693113749922465078041001982799768377778831989609609882305211954636814299122135072299143284269874598201073641177750313885272928521165313729885157847313210756424591351661116124485179121145607967224541732682802161801640274487228695185292843827523453799103093854289439746351140512310689847868708186071271961188091710414349308728593251256446937906472715623145479748145691937280367377707704727347960986051448041176739175445992389559180704276896166067601746675071929686264599003127880612709906462119071313487928297896169649063484921793481897107372148634407001281900668126517690633604969888968545753613776426798460398556298080880173594740735771044433618691000207806515312788449061836970969844447556308856982203133010787613869534487128651509980503756750857137045326204946799283798335885715939532417609590904402844780976273236375163954018642324395744958039525795935655576394678114713600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "feasible": true,
+      "T_count": 7514060575,
+      "Z": "170357643365901/70368744177664",
+      "old_BHMT_schedule": {
+        "P": 8192,
+        "K": 7,
+        "raw_error": "242537790371723623616663988809504379920462430900163637484244059843707563125622048058134467991139087524421167322947663497942060561281191269927499865392832673862267560017500065874313293862210068493457555689882172118109835362154130664453535712363855551368783280836045607189179565265908496031857147997600687874251648967747704252245266432994101537911813936808188745066497895942536964700466061265298373760538244184386378007862703941392471050688066123790353674606062942589703843669446985029926540254242928922422756365680285464052656024905367590898777518374488273110145852846715354967906639318140658445202334811303513393742480765492656083754759397541354883543460109527109627509097895255768423049483691984532805395693021358653790618112399451822764817119213482847884954569924079003991276902815198818412704136607508373712816751885037062434265977437900662650853822457501912608015045710994425523513185972038138573114060999771708885516661577634510908583532766957974268264139478718996719333179769076072191311861897481663162289917212004725186733718634188429515793150534423225800590588902524706214431117895976878633570297494686682684076984048505329622610741228862885377810987617391031215295270320120858940536843417874555224611/126748644643344009899957777414586745028347261263424338820028118799800890990932317814657500762641170862049464634083958366935919215718939697981926895814369917572011658500751307144583095567470670260496917937141645953161195427765775315055316876277256041997176352470525821795053078387668482012849606339835089617594283203905598043981580542753134074639861974355847444626439709663430356604332797380713806060175136676808777548637541981025338996708257907721283036601829998774136330114555955476413052344791290531123862223262277638391907928910280396198788579475172079960596118391247672671570407997899815161756196662014117081607566655363754541560485078676041809603310569145092431554205053784609469358924754833583832963733457490908701599901396769957998908370863408674152428811456490796881919809627172574930284607034366293080994690727745321828766135537759376279846743407576338332285791927242124885663835330222124351618215632659057118243668581742092816767020310684438290704400366016995654188784544538475986986021985581168158464713694831285927405061277223161856544366255467503180900033264949806508719142519010641154834616129945600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "failure": "38098515730919172742853173646375275480091792831905721/1000000000000000000000000000000000000000000000000000000",
+        "queries": 57337,
+        "T": 7514056347
+      },
+      "complete_totals": {
+        "T_count": 7514060575,
+        "nonoracle_gates": 26844701856,
+        "T_depth_upper": 6920507580,
+        "nonoracle_depth_upper": 25003265147,
+        "label_queries": 57465,
+        "coherent_label_queries": 57337,
+        "measured_head_queries": 128,
+        "allocated_width": 376,
+        "referenced_width_upper": 376,
+        "optimal_active_width": null,
+        "maximum_source_seeds": 100,
+        "stages": [
+          {
+            "P": 8192,
+            "K": 7,
+            "iterate_T": 131049,
+            "iterate_T_depth": 120697,
+            "iterate_nonoracle_depth": 436071,
+            "iterate_width": 363,
+            "source_seed_bits": 100,
+            "component_ledgers": {
+              "compute": {
+                "macro_counts": {
+                  "x": 3467,
+                  "cx": 131104,
+                  "h": 32250,
+                  "t": 32250,
+                  "tdg": 32250
+                },
+                "expanded_counts": {
+                  "x": 3467,
+                  "cx": 131104,
+                  "h": 32250,
+                  "t": 32250,
+                  "tdg": 32250
+                },
+                "T_count": 64500,
+                "depth_including_opaque_query_layers": 216166,
+                "T_depth_conservative_scheduled": 59603,
+                "width": 363,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 231321,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "compute_inverse": {
+                "macro_counts": {
+                  "h": 32250,
+                  "t": 32250,
+                  "cx": 131104,
+                  "tdg": 32250,
+                  "x": 3467
+                },
+                "expanded_counts": {
+                  "h": 32250,
+                  "t": 32250,
+                  "cx": 131104,
+                  "tdg": 32250,
+                  "x": 3467
+                },
+                "T_count": 64500,
+                "depth_including_opaque_query_layers": 216166,
+                "T_depth_conservative_scheduled": 59603,
+                "width": 363,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 231321,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "phase_core": {
+                "macro_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "expanded_counts": {
+                  "h": 16,
+                  "cx": 39,
+                  "tdg": 18,
+                  "t": 24,
+                  "label": 1,
+                  "x": 4
+                },
+                "T_count": 42,
+                "depth_including_opaque_query_layers": 62,
+                "T_depth_conservative_scheduled": 23,
+                "width": 363,
+                "ordinary_label_queries": 1,
+                "nonoracle_elementary_gates": 101,
+                "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+              },
+              "controlled_reflection": {
+                "macro_counts": {
+                  "x": 424,
+                  "h": 1748,
+                  "t": 1004,
+                  "cx": 760,
+                  "tdg": 1003,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "expanded_counts": {
+                  "x": 424,
+                  "h": 1748,
+                  "t": 1004,
+                  "cx": 760,
+                  "tdg": 1003,
+                  "sdg": 252,
+                  "s": 252,
+                  "z": 1
+                },
+                "T_count": 2007,
+                "depth_including_opaque_query_layers": 3744,
+                "T_depth_conservative_scheduled": 1494,
+                "width": 363,
+                "ordinary_label_queries": 0,
+                "nonoracle_elementary_gates": 5444,
+                "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+              }
+            }
+          }
+        ],
+        "initial_source_per_run": {
+          "T": 604,
+          "T_depth": 551,
+          "nonoracle_depth": 1392,
+          "gates": 1623
+        }
+      },
+      "bias_components": {
+        "descriptor": "29759300957723745139732865073563052375580993628352979223662996901687693494799009650852097/200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "selector": "0",
+        "hermite": "5339495758441827419842409441345286489545778789664851908846709035926575378641731074346366849588853848166902023667418149960893865579604112218911889910300650679803654264374834435616579798132757462048890838724834007892926947891622757107527368839409062169238222231947192987417854135824316321613633503044571920248289621295301783257490234812973200972182203537860480223773431825362538661846714336163084524042351539327320714815563141287728902054136950266041167931278413622046898302361685247056791414537857532508157171977885696972207632410220240896199476657873684000043884563067587000337501542970595394622952758430284638102965097362389827498377520337715863426553881626947246866544157529383167656810055142372493598399576031866445313329528997650603080069709932014116290353767443140205764993448244749513079219418427408066866930240726591297431034075349259456119771090256973872193022443982393630266260151599592845974727872406270174988043580140692067199009268535342296577977822928301178668636431951812187863641157039716930599686360113843807730181468511088358389455852457725254588463942375898651701095341661748112370623160539589313/2534972892866880197999155548291734900566945225268486776400562375996017819818646356293150015252823417240989292681679167338718384314378793959638537916287398351440233170015026142891661911349413405209938358742832919063223908555315506301106337525545120839943527049410516435901061567753369640256992126796701792351885664078111960879631610855062681492797239487116948892528794193268607132086655947614276121203502733536175550972750839620506779934165158154425660732036599975482726602291119109528261046895825810622477244465245552767838158578205607923975771589503441599211922367824953453431408159957996303235123933240282341632151333107275090831209701573520836192066211382901848631084101075692189387178495096671676659274669149818174031998027935399159978167417268173483048576229129815937638396192543451498605692140687325861619893814554906436575322710755187525596934868151526766645715838544842497713276706604442487032364312653181142364873371634841856335340406213688765814088007320339913083775690890769519739720439711623363169294273896625718548101225544463237130887325109350063618000665298996130174382850380212823096692322598912000000000000000",
+        "threshold_quantization": "170357643365901/590295810358705651712",
+        "theta_rounding": "21017031834041351524268473917/29514790517935282585600000000000000",
+        "small_angle_sharing": "2651016326807049214167/2475880078570760549798248448",
+        "source_preparation": "84589892849235766599340342494045634973990416901130622081363229199017818569062493/87960930222080000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "status": "complete",
+  "seconds": 13.41020829998888,
+  "attempt_count": 16
+}

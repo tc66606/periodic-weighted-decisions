@@ -1,0 +1,176 @@
+{
+  "schema": "finite_sign_qpe_v1",
+  "tag": "heldout_1",
+  "response": "nodes",
+  "route": "sine_sign",
+  "contract": {
+    "raw_margin": ".002",
+    "bias_cap": ".0002",
+    "total_failure": ".05",
+    "logical_reserve": ".01",
+    "input_access": "shared unknown XOR binary-label oracle"
+  },
+  "observable": {
+    "raw_path": "../heat_weight_sign_frontier/results/sign/confirmation/heldout_1_nodes_raw.json.gz",
+    "raw_sha256": "01d05dd16a7cd0293d9865946dc9e3624d8bd20dfd70d37146b111f5e5c0fb0f",
+    "native_path": "../heat_weight_sign_frontier/results/sign/confirmation/heldout_1_nodes_word.json.gz",
+    "native_sha256": "43878df7feca20bd9bca0c0cd09c04d5457a8bb55dfa27efdf8879a755a9a6e3",
+    "Z": "6058172159307/2199023255552",
+    "bias": "8249605009062827603075696686779451058939007998045801818900206474124403073483241326023984565315535464258401861/100370866176000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "head_labels": 256,
+    "head_preprocessing": {
+      "head_entries": 256,
+      "head_label_queries": 256,
+      "head_numerical_weight_storage_bits": 12544,
+      "head_explicit_address_and_weight_bits": 19200,
+      "classical_accumulator_bits_sufficient": 57,
+      "original_descriptor_radius": 128,
+      "coefficient_degree": 22,
+      "extra_cardinal_weight_evaluations": 0,
+      "extra_weight_generation_seconds": 0.00017740001203492284,
+      "extra_head_rounding_error_upper": "0",
+      "head_weight_label_products": 256,
+      "head_scalar_additions": 255,
+      "coefficient_generation": "Actual tuple-specific interval descriptor generated once, then bq-only public weights beyond its original radius. Its original omitted smooth residual stays charged for every R."
+    }
+  },
+  "reflection": "G=R_psi D_y; relevant eigenphases +/-phi; implemented tail mean=Z*cos(phi). Literal accepted inverse and source reflection retained.",
+  "P": 16384,
+  "K": 1,
+  "clock": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_clock_m14.json.gz",
+    "sha256": "15af989ddaf5b04838e87b9b7f8f92196b6b77212f64a702405a757f824f5510"
+  },
+  "phase_wires": [
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343
+  ],
+  "initial_source_key": "initial_preparation",
+  "iterate_key": "controlled_iterate",
+  "outer_control_port": 285,
+  "powers": [
+    {
+      "control_wire": 330,
+      "repeat": 1,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 331,
+      "repeat": 2,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 332,
+      "repeat": 4,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 333,
+      "repeat": 8,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 334,
+      "repeat": 16,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 335,
+      "repeat": 32,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 336,
+      "repeat": 64,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 337,
+      "repeat": 128,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 338,
+      "repeat": 256,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 339,
+      "repeat": 512,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 340,
+      "repeat": 1024,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 341,
+      "repeat": 2048,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 342,
+      "repeat": 4096,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 343,
+      "repeat": 8192,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    }
+  ],
+  "inverse_qft": {
+    "path": "../heat_weight_sign_frontier/results/sign/inverse_qft_m14.json.gz",
+    "sha256": "1a397ecd216fd8ebd33530c0cff82ff9921510b6b3ae9ab19a1265e7542aa06e"
+  },
+  "local_wire_mapping": "Clock and inverse-QFT local bit j maps to phase_wires[j]; little-endian integer j=sum(2^k*bit_k).",
+  "decoder": {
+    "path": "../heat_weight_coordinate_frontier/src/statistic/finite_decoder.py",
+    "sha256": "60cf456e5fcceb6a31fd8612ab3f0d729e3107f6b317629666e9ad38f96c797a",
+    "callable": "signed_mean(outcome,phase_size,bits=48)",
+    "score_callable": "decode_score(outcomes,phase_size,normalization,known_head)",
+    "output": "Return +1 if decode_score >= 0, otherwise -1. Ties counted as failures in proof.",
+    "arithmetic": "Exact rational degree-64 cosine, nearest dyadic48 fractional bits; head sum exact on raw head_coefficients; independent odd K median."
+  },
+  "finite_certificate": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_sine_confirmation.json",
+    "key": [
+      "heldout_1",
+      "nodes"
+    ]
+  },
+  "error": {
+    "statistical": "498262482346289466263324152786330234230872854105756245014003564494933494464962433707476598157795868751322622810525821510984559450102004813817005823331386012126848295213346828144848900679467809877530736343875242524213913615795951640711936264495634501773355757172325896626630707622625224317536820011008/51377085090048709018971677095143027419540624032139978827620879548992760787155837740684394902518702794213444256588220028756159312765869488374812930237280683777630074687695789290997336052954617613112596850537259601398072463933155814380428622083575624932914009386080730759726979474828834979691745543524225",
+    "clock_operator": "70521690043928623137335571290890289504489947137910924705328164012754367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "qft_operator": "144236396808732146084174968234560555793166016036633/10000000000000000000000000000000000000000000000000000000",
+    "total": "1013515567301116211999065675910666805791222736048416356304430790147897638447115744705327953423220688831776070254703803826597372492024966937558133922923978885093936228190126692493420868457036300431388121075538309308171974248041604001566423518975701034325253828690473575551103160130401144764358759953847308515129333950254881598492215056397926103864026777824192657991132224897561623/51377085090048709018971677095143027419540624032139978827620879548992760787155837740684394902518702794213444256588220028756159312765869488374812930237280683777630074687695789290997336052954617613112596850537259601398072463933155814380428622083575624932914009386080730759726979474828834979691745543524225000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "accounting": "Measured head once; initialize source and clock each independent run; all powers and inverse-QFT each run. Initial source and clock serially bounded. Opaque oracle interiors excluded. Reserved old outer port not reclaimed.",
+  "resources": {
+    "T_count": 159508076,
+    "nonoracle_gates": 458691898,
+    "T_depth_upper": 86669239,
+    "nonoracle_depth_upper": 249153142,
+    "allocated_width": 344,
+    "optimal_active_width": null,
+    "label_queries": 16639,
+    "coherent_label_queries": 16383,
+    "maximum_sequential_label_calls": 16383,
+    "number_of_runs": 1,
+    "maximum_single_run_T_depth": 86669239,
+    "maximum_single_run_nonoracle_depth": 249153142
+  }
+}

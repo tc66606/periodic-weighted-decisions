@@ -1,0 +1,103 @@
+{
+  "schema": "finite_random_grid_confirmation_registration_v1",
+  "fixed_string": "bounded-polynomial-observables/finite-random-grid-confirmation/2026-09-30",
+  "sha256": "e05225757e93b4cc0fc1bc1edd4dada6f7a6d9f8518480c3e2ede35f99b5fdb6",
+  "choices": {
+    "tau": [
+      ".8125",
+      ".9375",
+      "1.0625"
+    ],
+    "lam": [
+      ".11",
+      ".13",
+      ".17"
+    ],
+    "eta": [
+      ".21875",
+      ".34375",
+      ".46875"
+    ]
+  },
+  "points": [
+    {
+      "n": 18,
+      "parameters": {
+        "tau": "1.0625",
+        "lam": ".13",
+        "eta": ".34375"
+      }
+    },
+    {
+      "n": 30,
+      "parameters": {
+        "tau": ".8125",
+        "lam": ".11",
+        "eta": ".21875"
+      }
+    }
+  ],
+  "parameter_rule": "SHA256 UTF-8 fixed string; bytes0..2 for n18 and bytes3..5 for n30; byte mod3 indexes ordered tau,lam,eta choices. No unknown label values are read.",
+  "registered_utc": "2026-09-30T21:31:03.189358+00:00",
+  "source_sha256": {
+    "src/random_sign/discrete_bound.py": "b1f89b13b5b22c3f5923e7b9b9df9884d60d0aa006b86f2e2e59e9c33669c449",
+    "src/random_sign/native.py": "46d6d37c44d3876c2347bec5a8c208f28d610370f42537ae63f443e017babf0b",
+    "src/random_sign/assemble.py": "6011be4aab19937b5c532373fbdaf2fc8f19392a0bf29266925f6999de950387",
+    "src/random_sign/blind_padding.py": "5a9bc9629547f8bb24007f0d98dc77a779700fd4d8f4271cc2d55c58df566b4a"
+  },
+  "confirmation_constructor_sha256": "a8d65a55165fd098ed954370d073ee673cd8a5167c5a50017c2f448a3f6d5fd2",
+  "inherited_formula_sha256": {
+    "../heat_weight_coordinate_frontier/src/coordinate/common.py": "d688e75a4ba1d3f2fb6e01a35ae977a85c6f40df25285d0a373672f876657d8f",
+    "../heat_weight_coordinate_frontier/src/coordinate/fresh.py": "402131bb0bdb0117d12535c0a3af8e1d4c7b245c439a096f85d31edf616cd38b",
+    "../heat_weight_coordinate_frontier/src/coordinate/joint.py": "bf4470ea843028daccff6e9f209c1b9c680462208b4c95950c51024303499aeb",
+    "../heat_weight_coordinate_frontier/src/response/experiment.py": "d786fb93362bbe3e3e2a94c38063c5177b994c3db508d17d6b1ad31aec55481b",
+    "../heat_weight_coordinate_frontier/src/response/autonomous_blind_source.py": "d9f6da0b550c249468a75073bdf411c9fa82076179c268b6f6f55d13fa833001",
+    "../heat_weight_coordinate_frontier/src/statistic/blind_compare.py": "6607d6c8f9b7bc0b43fb3baa031433d6ac9cf4e637b898e216d605a70e50d866",
+    "../heat_weight_unified_frontier/src/unified/multilevel.py": "8ca188284319928810cd31ad5a94729e3583477db2fa7976a68cac2412b9a12e",
+    "../heat_weight_shared_observable/src/shared_observable/blind_practical_descriptor.py": "e4a1bdaa271c3e281d5bb962a16d633432220563e855a614d1fa94e29c4f7432"
+  },
+  "prior_confirmation_algorithm": {
+    "path": "../heat_weight_sign_frontier/src/sign/confirmation.py",
+    "sha256": "8b0f0b658149f04e69fa2942862844230aa0c08abd25f678d41792caccd27282"
+  },
+  "construction_rule": "Exactly inherited sign confirmation construction: actual fixed_data descriptor, tail_description, g1..min(8,f), c28,p23, f=min(22,maxshell+eta_bits), round_bits=f-g, merge_small_cut10, nodes shared endpoints and cell_refinement, equal-shell source, parallel coordinate if f even otherwise tapered. Choose minimum complete OLD BHMT T separately for linear and nodes; ties retain lowest g. Preserve every feasible and failed attempt.",
+  "old_BHMT_menu": {
+    "P_powers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "K": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23
+    ]
+  },
+  "readout_rule": "The locked finite P/S/K construction is evaluated only after these new observables are fixed. This runner does not execute assemble.py or select resource schedules.",
+  "new_tuple_scope": "Genuinely new n18,n30 public tuples; old fresh_0/fresh_1 and heldout_0/heldout_1 are not reused as new evidence.",
+  "proof_scope": "The discrete-window sign theorem is analytic. Full native program validity and resource comparisons remain pending until assembly and independent checks."
+}

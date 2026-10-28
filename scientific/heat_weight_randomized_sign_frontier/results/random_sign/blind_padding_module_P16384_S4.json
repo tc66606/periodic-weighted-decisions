@@ -1,0 +1,161 @@
+{
+  "schema": "blind_padding_module_v1",
+  "P": 16384,
+  "S": 4,
+  "padded_phase_size": 65536,
+  "m": 14,
+  "padding_bits": 2,
+  "phase_width": 16,
+  "initial_high_bits": {
+    "wires": [
+      14,
+      15
+    ],
+    "state": "all zero"
+  },
+  "clock": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_clock_m14.json.gz",
+    "sha256": "15af989ddaf5b04838e87b9b7f8f92196b6b77212f64a702405a757f824f5510",
+    "local_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "T_count": 2547,
+    "gates": 6606,
+    "T_depth": 2547,
+    "depth": 6593,
+    "operator_error": "70521690043928623137335571290890289504489947137910924705328164012754367/50000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "inverse_qft": {
+    "path": "../heat_weight_randomized_sign_frontier/results/random_sign/blind_padding_iqft_m16.json.gz",
+    "sha256": "eb36401ee6860cad1ef52c3cacd4bb5d30dedbd4d7eb72a449ab47974b645de1",
+    "local_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "T_count": 22668,
+    "gates": 57415,
+    "T_depth": 3896,
+    "depth": 9943,
+    "operator_error": "773495050052604437067215137577059811063117688657/40000000000000000000000000000000000000000000000000000"
+  },
+  "word_path": "../heat_weight_randomized_sign_frontier/results/random_sign/blind_padding_iqft_m16.json.gz",
+  "word_sha256": "eb36401ee6860cad1ef52c3cacd4bb5d30dedbd4d7eb72a449ab47974b645de1",
+  "powers": [
+    {
+      "control_wire": 0,
+      "repeat": 1,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 1,
+      "repeat": 2,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 2,
+      "repeat": 4,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 3,
+      "repeat": 8,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 4,
+      "repeat": 16,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 5,
+      "repeat": 32,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 6,
+      "repeat": 64,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 7,
+      "repeat": 128,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 8,
+      "repeat": 256,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 9,
+      "repeat": 512,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 10,
+      "repeat": 1024,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 11,
+      "repeat": 2048,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 12,
+      "repeat": 4096,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 13,
+      "repeat": 8192,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    }
+  ],
+  "coherent_label_queries": 16383,
+  "maximum_sequential_label_calls": 16383,
+  "decoder": {
+    "outcome": "n=S*j+z",
+    "phase_size": 65536,
+    "callable": "signed_mean(n,P*S,bits=48)",
+    "decision": "sign(c_H+Z*decoded_cosine); the same tie convention as the randomized route"
+  },
+  "costs": {
+    "T_count": 25215,
+    "gates": 64021,
+    "T_depth_serial_actual": 6443,
+    "depth_serial_actual": 16536,
+    "T_depth_serial_gate_upper": 25215,
+    "depth_serial_gate_upper": 64008
+  },
+  "readout_operator_error": "966939334255799474957156257542615654118401600768387910924705328164012754367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "high_zero_invariant": "Only low m clock wires are prepared and control G powers. High r wires remain exactly zero until the final IQFT. No high controlled G powers are present.",
+  "statistical_attribution": "S16 sufficient certificate was independently discovered here; S4 refined certificate is supplied and attributed to the separate reviewer."
+}

@@ -1,0 +1,184 @@
+{
+  "tag": "confirmation_0",
+  "method": "nodes",
+  "n": 18,
+  "parameters": {
+    "tau": "1.0625",
+    "lam": ".13",
+    "eta": ".34375"
+  },
+  "g": 2,
+  "precision": {
+    "c": 28,
+    "g": 2,
+    "p": 23,
+    "round_bits": 19,
+    "merge_small_cut": 10,
+    "endpoint_layout": "shared"
+  },
+  "bias": "3519652341074307751403584307057585346620921252408255165015356953220290721178285428190478364365749269962672460099/80296692940800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "Z": "39064252258575/70368744177664",
+  "totals": {
+    "T_count": 121994614,
+    "nonoracle_gates": 348269719,
+    "T_depth_upper": 72602495,
+    "nonoracle_depth_upper": 210409528,
+    "label_queries": 14585,
+    "coherent_label_queries": 14329,
+    "measured_head_queries": 256,
+    "allocated_width": 285,
+    "referenced_width_upper": 285,
+    "optimal_active_width": null,
+    "maximum_source_seeds": 102,
+    "stages": [
+      {
+        "P": 2048,
+        "K": 7,
+        "iterate_T": 8509,
+        "iterate_T_depth": 5062,
+        "iterate_nonoracle_depth": 14672,
+        "iterate_width": 274,
+        "source_seed_bits": 102,
+        "component_ledgers": {
+          "compute": {
+            "macro_counts": {
+              "x": 427,
+              "cx": 4552,
+              "h": 1844,
+              "t": 1844,
+              "tdg": 1844
+            },
+            "expanded_counts": {
+              "x": 427,
+              "cx": 4552,
+              "h": 1844,
+              "t": 1844,
+              "tdg": 1844
+            },
+            "T_count": 3688,
+            "depth_including_opaque_query_layers": 6546,
+            "T_depth_conservative_scheduled": 2218,
+            "width": 274,
+            "ordinary_label_queries": 0,
+            "nonoracle_elementary_gates": 10511,
+            "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+          },
+          "compute_inverse": {
+            "macro_counts": {
+              "h": 1844,
+              "t": 1844,
+              "cx": 4552,
+              "tdg": 1844,
+              "x": 427
+            },
+            "expanded_counts": {
+              "h": 1844,
+              "t": 1844,
+              "cx": 4552,
+              "tdg": 1844,
+              "x": 427
+            },
+            "T_count": 3688,
+            "depth_including_opaque_query_layers": 6546,
+            "T_depth_conservative_scheduled": 2218,
+            "width": 274,
+            "ordinary_label_queries": 0,
+            "nonoracle_elementary_gates": 10511,
+            "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+          },
+          "phase_core": {
+            "macro_counts": {
+              "h": 16,
+              "cx": 39,
+              "tdg": 18,
+              "t": 24,
+              "label": 1,
+              "x": 4
+            },
+            "expanded_counts": {
+              "h": 16,
+              "cx": 39,
+              "tdg": 18,
+              "t": 24,
+              "label": 1,
+              "x": 4
+            },
+            "T_count": 42,
+            "depth_including_opaque_query_layers": 62,
+            "T_depth_conservative_scheduled": 23,
+            "width": 274,
+            "ordinary_label_queries": 1,
+            "nonoracle_elementary_gates": 101,
+            "Toffoli_scope": "Already-expanded native Clifford+T word: phase-safe 4T compute/true-adjoint, exact 7T middle gates. Counts are literal, not a blanket Toffoli substitution."
+          },
+          "controlled_reflection": {
+            "macro_counts": {
+              "h": 894,
+              "x": 410,
+              "cx": 644,
+              "tdg": 545,
+              "t": 546,
+              "sdg": 65,
+              "s": 65,
+              "z": 1
+            },
+            "expanded_counts": {
+              "h": 894,
+              "x": 410,
+              "cx": 644,
+              "tdg": 545,
+              "t": 546,
+              "sdg": 65,
+              "s": 65,
+              "z": 1
+            },
+            "T_count": 1091,
+            "depth_including_opaque_query_layers": 1584,
+            "T_depth_conservative_scheduled": 628,
+            "width": 274,
+            "ordinary_label_queries": 0,
+            "nonoracle_elementary_gates": 3170,
+            "Toffoli_scope": "Exact standard 15-operation seven-T expansion; no relative-phase replacement."
+          }
+        }
+      }
+    ],
+    "initial_source_per_run": {
+      "T": 138,
+      "T_depth": 130,
+      "nonoracle_depth": 338,
+      "gates": 464
+    }
+  },
+  "schedule": {
+    "P": 2048,
+    "K": 7,
+    "raw_error": "19771607028506198794352525478422267909969299025050084234673771698620878795772563390088511945334974289645509192361163422407948097/11300754887727188019668582400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "failure": "23777384689794765701087980017399278683617119938637357/625000000000000000000000000000000000000000000000000000",
+    "queries": 14329,
+    "T": 121993648
+  },
+  "head_preprocessing": {
+    "head_entries": 256,
+    "head_label_queries": 256,
+    "head_numerical_weight_storage_bits": 12544,
+    "head_explicit_address_and_weight_bits": 17152,
+    "classical_accumulator_bits_sufficient": 57,
+    "original_descriptor_radius": 128,
+    "coefficient_degree": 26,
+    "extra_cardinal_weight_evaluations": 0,
+    "extra_weight_generation_seconds": 0.00016169995069503784,
+    "extra_head_rounding_error_upper": "0",
+    "head_weight_label_products": 256,
+    "head_scalar_additions": 255,
+    "coefficient_generation": "Actual tuple-specific interval descriptor generated once, then bq-only public weights beyond its original radius. Its original omitted smooth residual stays charged for every R."
+  },
+  "physical_fraction_bits": 21,
+  "descriptor_path": "../heat_weight_randomized_sign_frontier/results/random_sign/confirmation/confirmation_0_descriptor.json.gz",
+  "descriptor_sha256": "57255f643450d1eedda8f99d2e14297235bc16b763e8e1cd989882bf32afb29a",
+  "selection": "Minimum complete OLD BHMT control T over the fixed g menu, separately per response",
+  "registration_sha256": "bd7443c1bd6f84641c3509aa5e8d508404f5de737a33520930f2df7fe597fa59",
+  "artifact": "confirmation_0_nodes",
+  "raw_sha256": "c493150ec22241d8d24cdfb208d7cf2e906e820910926e4816ac92209c01c9de",
+  "native_sha256": "704550c0af76e659b6cf1ad8cbf1d34ed81497f49ff7516f1b9822b7714a7df2"
+}

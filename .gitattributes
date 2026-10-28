@@ -1,0 +1,2 @@
+# Preserve exact released bytes for hash-bound reproduction.
+* -text

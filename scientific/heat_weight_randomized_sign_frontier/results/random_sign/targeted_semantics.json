@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 4,
+  "observations": [
+    {
+      "native_branch_cases": 147,
+      "worst_TV": 5.397060004811769e-08,
+      "literal_inverse_error": 5.661349148429584e-14
+    }
+  ],
+  "scope": "Actual native small clock/ramp/IQFT and adjoints with eigenphase controlled-power interface. Exact analytical POVM comparison. No full many-qubit heat computation; interval proofs are separate."
+}

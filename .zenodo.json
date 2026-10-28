@@ -1,0 +1,36 @@
+{
+  "title": "Code and certificates for “Query Bounds and Explicit Quantum Circuits for Periodic Weighted Decisions”",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "description": "Source code, exact mathematical certificates, compiled gate-sequence records and fully specified generators, logical-resource tables, pinned dependencies and reproduction instructions supporting the associated manuscript. Separate entry points verify finite classical bounds, conditional normalization sensitivity and compiled-circuit resource calculations. The archive distinguishes label-query complexity from public logical costs; it does not implement the opaque label oracle or establish hardware runtime advantage.",
+  "creators": [
+    {
+      "name": "Chen, Annan",
+      "orcid": "0009-0000-1308-0466",
+      "affiliation": "Department of Physics, Imperial College London, London, United Kingdom"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.21203/rs.3.rs-11513670/v1",
+      "scheme": "doi",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/tc66606/periodic-weighted-decisions",
+      "scheme": "url",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "keywords": [
+    "Quantum algorithms",
+    "Query complexity",
+    "Reversible circuits",
+    "Numerical certification"
+  ],
+  "license": "other-open",
+  "notes": "Mixed per-component licences: original code MIT; original data, certificates and documentation CC BY 4.0. Existing third-party terms retained. See LICENSE.md and license_map.csv.",
+  "doi": "10.5281/zenodo.23736017"
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this version of the code and certificates. Original code is MIT; original data, certificates and documentation are CC BY 4.0, with per-component scope in LICENSE.md."
+type: software
+title: 'Code and certificates for “Query Bounds and Explicit Quantum Circuits for Periodic Weighted Decisions”'
+version: '2.0.0'
+doi: '10.5281/zenodo.23736017'
+url: 'https://doi.org/10.5281/zenodo.23736017'
+repository-code: 'https://github.com/tc66606/periodic-weighted-decisions'
+authors:
+  - family-names: Chen
+    given-names: Annan
+    orcid: 'https://orcid.org/0009-0000-1308-0466'
+    affiliation: 'Department of Physics, Imperial College London, London, United Kingdom'
+    email: 'annan.chen24@imperial.ac.uk'
+keywords:
+  - Quantum algorithms
+  - Query complexity
+  - Reversible circuits
+  - Numerical certification
+references:
+  - type: unpublished
+    title: 'Query Bounds and Explicit Quantum Circuits for Periodic Weighted Decisions'
+    authors:
+      - family-names: Chen
+        given-names: Annan
+    doi: '10.21203/rs.3.rs-11513670/v1'
+    url: 'https://www.researchsquare.com/article/rs-11513670/v1'

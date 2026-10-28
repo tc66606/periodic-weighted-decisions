@@ -1,0 +1,234 @@
+{
+  "schema": "finite_randomized_sign_program_v1",
+  "tag": "confirmation_0",
+  "response": "nodes",
+  "route": "randomized",
+  "P": 2048,
+  "S": 8,
+  "K": 1,
+  "contract": {
+    "raw_margin": ".002",
+    "bias_cap": ".0002",
+    "total_failure": ".05",
+    "logical_reserve": ".01",
+    "access": "same unknown XOR binary-label oracle"
+  },
+  "observable": {
+    "raw_path": "../heat_weight_randomized_sign_frontier/results/random_sign/confirmation/confirmation_0_nodes_raw.json.gz",
+    "raw_sha256": "c493150ec22241d8d24cdfb208d7cf2e906e820910926e4816ac92209c01c9de",
+    "native_path": "../heat_weight_randomized_sign_frontier/results/random_sign/confirmation/confirmation_0_nodes_word.json.gz",
+    "native_sha256": "704550c0af76e659b6cf1ad8cbf1d34ed81497f49ff7516f1b9822b7714a7df2",
+    "head_labels": 256,
+    "Z": "39064252258575/70368744177664",
+    "bias": "3519652341074307751403584307057585346620921252408255165015356953220290721178285428190478364365749269962672460099/80296692940800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "input_binding": {
+    "path": "../heat_weight_randomized_sign_frontier/results/random_sign/confirmation/confirmation_0_nodes.json",
+    "sha256": "662945fbcd4344240200a368ee42c503272dfc15360763ce2e4e571dc8ed5791"
+  },
+  "iterate_profile": {
+    "T": 8509,
+    "gates": 24293,
+    "T_depth": 5062,
+    "depth": 14672,
+    "width": 274
+  },
+  "initial_profile": {
+    "T": 138,
+    "gates": 464,
+    "depth": 338,
+    "T_depth": 130
+  },
+  "randomization": {
+    "classical_random_bits_per_run": 3,
+    "rule": "Uniform independent z in0..S-1, freshly sampled EACH repetition",
+    "branches_are_alternatives_not_repetitions": true
+  },
+  "clock": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_clock_m11.json.gz",
+    "sha256": "20ad721904ddfbcec529c78842555167e1bf76b1e962b4896e12672ec8172b37"
+  },
+  "ramp": {
+    "path": "../heat_weight_randomized_sign_frontier/results/random_sign/native/ramp_m11_S8.json.gz",
+    "sha256": "28589ca1750e73a84b8358f79472fae5ec6b6bd43b87ab52e10bfdab28102c0f"
+  },
+  "inverse_qft": {
+    "path": "../heat_weight_randomized_sign_frontier/results/random_sign/native/iqft_m11.json.gz",
+    "sha256": "90669756c70fbfff41401653f8230e0cc5b070c92d51325d376d5d15c4ea20af"
+  },
+  "phase_wires": [
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284
+  ],
+  "clock_local_wires": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "initially_zero_padding_local_wires": [],
+  "ordered_operations": [
+    "prepare source",
+    "prepare low-m sine clock",
+    "apply selected negative ramp (randomized only)",
+    "controlled powers on low-m phase bits only",
+    "inverse QFT on all phase bits",
+    "measure",
+    "finite shifted decode and classical median"
+  ],
+  "powers": [
+    {
+      "control_wire": 274,
+      "repeat": 1,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 275,
+      "repeat": 2,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 276,
+      "repeat": 4,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 277,
+      "repeat": 8,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 278,
+      "repeat": 16,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 279,
+      "repeat": 32,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 280,
+      "repeat": 64,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 281,
+      "repeat": 128,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 282,
+      "repeat": 256,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 283,
+      "repeat": 512,
+      "outer_port": 241
+    },
+    {
+      "control_wire": 284,
+      "repeat": 1024,
+      "outer_port": 241
+    }
+  ],
+  "inverse_semantics": "Accepted literal compute inverse and actual-source reflection unchanged; random ramp adjoint is literal reversed native word.",
+  "decoder": {
+    "wrapper": {
+      "path": "../heat_weight_randomized_sign_frontier/src/random_sign/native.py",
+      "sha256": "46d6d37c44d3876c2347bec5a8c208f28d610370f42537ae63f443e017babf0b"
+    },
+    "callable": "decision",
+    "accepted": {
+      "path": "../heat_weight_sign_frontier/src/statistic/finite_decoder.py",
+      "sha256": "60cf456e5fcceb6a31fd8612ab3f0d729e3107f6b317629666e9ad38f96c797a"
+    },
+    "rule": "signed_mean(S*j+z,S*P,bits48); padded outcome k becomes (k//S,k%S); exact same dyadic head; positive tie, ties charged as failures"
+  },
+  "certificate": {
+    "path": "../heat_weight_randomized_sign_frontier/results/random_sign/cert_confirmation_0_nodes_P2048_S8.json",
+    "sha256": "ff7a252a5a615d5818c1c90791e78cb46e644cc4108c2f7df05708bb0b935bda"
+  },
+  "error": {
+    "raw_bias": "3519652341074307751403584307057585346620921252408255165015356953220290721178285428190478364365749269962672460099/80296692940800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Z": "39064252258575/70368744177664",
+    "decoder": "1/281474976710656",
+    "single_statistical": "5397632343827725882741/604462909807314587353088",
+    "statistical": "5397632343827725882741/604462909807314587353088",
+    "clock_operator": "51902667834874825853897073967630674224682530818527034082489390851854367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "qft_operator": "10380337631395100155425716771325526231017134091051/1250000000000000000000000000000000000000000000000000000",
+    "ramp_operator_worst": "372595805052780610241480038729107733339801621143/200000000000000000000000000000000000000000000000000000",
+    "synthesis_failure": "508414359186834033603252577609265613249860451458608527034082489390851854367/25000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "logical_reserve": ".01",
+    "total": "947498511568718946384376491169548393278618778738770017107612507496634486911859/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "feasible": true
+  },
+  "resources": {
+    "worst": {
+      "T": 17431882,
+      "gates": 49763218,
+      "T_depth": 10373929,
+      "depth": 30064007
+    },
+    "mean": {
+      "T": "34861611/2",
+      "gates": "99520991/2",
+      "T_depth": "20747643/2",
+      "depth": "30063730"
+    },
+    "head_queries": 256,
+    "coherent_queries": 2047,
+    "total_queries": 2303,
+    "longest_chain": 2047,
+    "single_run_worst_T_depth": 10373929,
+    "single_run_worst_depth": 30064007,
+    "allocated_width": 285,
+    "optimal_active_width": null,
+    "classical_random_bits": 3,
+    "random_branch_count": 8,
+    "readout_only": {
+      "clock": {
+        "T": 1927,
+        "gates": 4967,
+        "depth": 4957,
+        "T_depth": 1927
+      },
+      "qft": {
+        "T": 9741,
+        "gates": 24571,
+        "depth": 6217,
+        "T_depth": 2456
+      },
+      "ramp_worst": {
+        "T": 2153,
+        "gates": 5445,
+        "depth": 557,
+        "T_depth": 217
+      },
+      "ramp_mean": {
+        "T": "2153/2",
+        "gates": "5445/2",
+        "depth": "280",
+        "T_depth": "219/2"
+      }
+    }
+  },
+  "cost_scope": "True native modules and explicit finite repetition loops. Serial composition; QFT serialized for matched depth controls. Initial zero padding free reset convention same as baseline; allocated wires charged. No oracle-interior/physical cost. No claim of optimal active-qubit schedule."
+}

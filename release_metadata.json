@@ -1,0 +1,101 @@
+{
+  "title": "Code and certificates for “Query Bounds and Explicit Quantum Circuits for Periodic Weighted Decisions”",
+  "version": "2.0.0",
+  "resource_type": "software",
+  "description": "Source code, exact mathematical certificates, compiled gate-sequence records and fully specified generators, logical-resource tables, pinned dependencies and reproduction instructions supporting the associated manuscript. Separate entry points verify finite classical bounds, conditional normalization sensitivity and compiled-circuit resource calculations. The archive distinguishes label-query complexity from public logical costs; it does not implement the opaque label oracle or establish hardware runtime advantage.",
+  "authors": [
+    {
+      "given_name": "Annan",
+      "family_name": "Chen",
+      "orcid": "0009-0000-1308-0466",
+      "affiliation": "Department of Physics, Imperial College London, London, United Kingdom",
+      "email": "annan.chen24@imperial.ac.uk"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.21203/rs.3.rs-11513670/v1",
+      "scheme": "doi",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "scientific_source_commit": "14d78a9d285ce4549f9ec3f8cfab32316291c04e",
+  "scientific_source_scope": "The 362 historical scientific payload files described by provenance.json; not the later finite-bound additions.",
+  "accepted_revision_commit": "a7c9950136e818bcb952ebce228b20ed545bf5f1",
+  "accepted_revision_scope": "Finite classical upper-bound and normalization checkers, exact outputs, and revision_bounds.csv; bytes verified against this commit.",
+  "accepted_revision_artifacts": [
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/check_normalization_sensitivity.py",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/check_normalization_sensitivity.py",
+      "sha256": "465b62781b1119ca1e4aa0b88ccbcf670a399869aefbe282ce1fb82ebc8db227"
+    },
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/independent_classical_certificate.json",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/independent_classical_certificate.json",
+      "sha256": "00ab4acb3c0123ad2b4ff6cef17acef128f61384e1eb798541a50dba3dfd3cee"
+    },
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/independent_classical_certificate.py",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/independent_classical_certificate.py",
+      "sha256": "7a05b6f2e6874624f2e18abb6acc0279603aa636f2e111f6daa2d13bdd63437e"
+    },
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/normalization_sensitivity.json",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/normalization_sensitivity.json",
+      "sha256": "77abc6c59a747869c1e79779d580ee3f11cfae56ec8843cf9d67416a88a7badb"
+    },
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/results/exact_rational_checks.json",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/results/exact_rational_checks.json",
+      "sha256": "8643de2d58efe508691375eaccef3519c765ee3250969c6664036a8b559d4b46"
+    },
+    {
+      "artifact_id": "NEW_BOUND_CERTIFICATES/scripts/check_finite_bounds.py",
+      "accepted_repository_path": "qip_v2_revision_20261028/NEW_BOUND_CERTIFICATES/scripts/check_finite_bounds.py",
+      "sha256": "82eafa1d9fd6757f7a10fe0d8469f4177f4fa497892504aa146796ca9ad49868"
+    },
+    {
+      "artifact_id": "revision_bounds.csv",
+      "accepted_repository_path": "qip_v2_revision_20261028/revision_bounds.csv",
+      "sha256": "1fff044caafa3cde417f99dca6ac08c99fd3c42933fcb67689b85c1b8ceea337"
+    }
+  ],
+  "licenses": {
+    "original_code": "MIT",
+    "original_data_certificates_documentation": "CC-BY-4.0",
+    "third_party": "Existing terms retained; see THIRD_PARTY_NOTICES.md"
+  },
+  "license_scope_file": "LICENSE.md",
+  "doi": "10.5281/zenodo.23736017",
+  "doi_url": "https://doi.org/10.5281/zenodo.23736017",
+  "repository_url": "https://github.com/tc66606/periodic-weighted-decisions",
+  "clone_url": "https://github.com/tc66606/periodic-weighted-decisions.git",
+  "software_version": "2.0.0",
+  "planned_manuscript_version": "Research Square v2",
+  "identifier_basis": "Author-supplied existing identifiers; no publication or anonymous-download claim is made by this local release.",
+  "portable_baseline": {
+    "description": "Frozen PRA preparation portable scientific release; source-to-portable transformations are retained in provenance.json.",
+    "scientific_file_count": 362,
+    "prior_archive_sha256": "2ee4d543b35d001c75818a7d69b0fd65d2453edb6935aa5d9e9da5c6fe2f35e7",
+    "preservation_scope": "All scientific/ payload bytes, resources.csv, controls.csv, provenance.json, executable scalar checkers and exact outputs."
+  },
+  "display_only_artifacts": [
+    {
+      "artifact_id": "paper_figures/figure_values.json",
+      "sha256": "88132f1bbd7f5c23760d7105a627a984ef94c103254e3cfc8be51c16c3ce9ace"
+    },
+    {
+      "artifact_id": "paper_figures/README.md",
+      "sha256": "5dedfcb46bebda59c2ea4f4cd3d1f4ab0b89dbae04d3a6983ef60c8784afd6ff"
+    },
+    {
+      "artifact_id": "paper_figures/render_resource_frontier.py",
+      "sha256": "4906448f9887384d9fcd938abe4e599ba2c8479cc567b14dd59ea730c84d554e"
+    },
+    {
+      "artifact_id": "paper_figures/requirements-figures.txt",
+      "sha256": "c9bd667274e5267715e37cadeee031666c550d6e60e40bacffd6bee4cfe2e82f"
+    }
+  ],
+  "display_only_scope": "Figure 3 reproduction from unchanged root CSV files; complete T count and longest chain panels. Widths retained in Table 2 and figure_values.json. No scientific algorithm or resource value changed."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "Exact rational inequalities checked; no execution of the user's original source",
+  "conditional_classical_upper": {
+    "scope": "Certified scalar bound conditional on manuscript residual-tail lemma; ideal public-preprocessing query model, not a runtime benchmark",
+    "N": "295147905179352825856",
+    "paired_head_radius": 410562,
+    "head_queries": 821124,
+    "tail_mass_rational_upper": "1505223/500000",
+    "tail_mass_upper_decimal": 3.010446,
+    "sample_queries": 13574839,
+    "total_query_upper": 14395963,
+    "failure_upper": "1/20",
+    "raw_margin": "1/500",
+    "bound": "one-sided Hoeffding; fixed exact-weight importance sampling after a paired head",
+    "not_claimed": [
+      "best classical algorithm",
+      "normal approximation certificate",
+      "physical execution",
+      "full generated-label oracle",
+      "global head-radius optimum"
+    ]
+  },
+  "phase_gap": {
+    "g": "474260614964822069087137514832111/1232801243759633083295334400000000000",
+    "g_decimal": 0.0003847016032515389,
+    "qf_P8192_interval": [
+      0.5015729092432656,
+      0.5015729092432656
+    ],
+    "qf_P16384_interval": [
+      1.0031458184865312,
+      1.0031458184865312
+    ],
+    "required_hypothesis": "P*g/(2*pi)>3/4, not >1",
+    "P_for_three_quarter_threshold_interval": [
+      12249.465405277952,
+      12249.465405277952
+    ]
+  },
+  "serial_model_diagnostics_not_hardware_guarantees": {
+    "D_T": 137096417,
+    "nonoracle_depth": 414917110,
+    "head": 4096,
+    "coherent_queries": 16383,
+    "classical_query_lower": 472711,
+    "T_only_ratio_zero_oracle_cost": 292.55661257108716,
+    "T_only_ratio_equal_oracle_prices": 303.1550553698102,
+    "oracle_price_ratio_asymptote": 28.603735579564184,
+    "equal_public_layer_model_ratio": 885.4114998452887,
+    "T_layers_seconds_at_1_10_100_us": [
+      137.096417,
+      1370.96417,
+      13709.6417
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "P": 32,
+      "S": 4,
+      "phase_width": 7,
+      "native_clock_source_error": 2.4247851537700896e-11,
+      "high_zero_population_before_iqft": 0,
+      "phases": 5,
+      "eigenbranches_per_phase": 2,
+      "mixture_cases": 25,
+      "maximum_native_state_error": 1.796909026274069e-07,
+      "maximum_native_total_variation": 4.145240123097935e-08,
+      "maximum_exact_povm_probability_discrepancy": 6.245004513516506e-16,
+      "maximum_shifted_decision_error": 3.9371134408217046e-08,
+      "maximum_native_inverse_error": 3.639122085990754e-13,
+      "certified_readout_operator_bound": "138125579924738343603109898354802853978959608765487420570232008769855304367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "clock_sha256": "3cdd6816f0474fdb2323e49ebd45320e288105d849a30d0dbc5693d525c56f7c",
+      "iqft_sha256": "59e6b998901a74f9ef3a7f44f0cd664d2e6ab662c55c81cca644b7f1f0da6cd3"
+    },
+    {
+      "P": 512,
+      "S": 4,
+      "phase_width": 11,
+      "native_clock_source_error": 1.2972256592961356e-10,
+      "high_zero_population_before_iqft": 0,
+      "phases": 5,
+      "eigenbranches_per_phase": 2,
+      "mixture_cases": 25,
+      "maximum_native_state_error": 2.1386394619468333e-07,
+      "maximum_native_total_variation": 3.047535399020144e-08,
+      "maximum_exact_povm_probability_discrepancy": 7.299716386910404e-15,
+      "maximum_shifted_decision_error": 1.955288608801453e-08,
+      "maximum_native_inverse_error": 1.0885449701846569e-12,
+      "certified_readout_operator_bound": "415254453937489459478484670758264784956305244088426854994485891265284854367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "clock_sha256": "672a9dca0ce9998b9fafed5e582e46d8709260c9a37f265b4563662c581f239f",
+      "iqft_sha256": "8ac437ec450461ed0058d12df96742af8c208eb3b554df1155e135b75d386dfe"
+    }
+  ],
+  "scope": "Actual native Clifford+T low-bit sine clocks and padded IQFTs; ideal relevant G eigenphase actions; small tests falsify conventions. Exact POVM equivalence and synthesis-error proof establish arbitrary inputs."
+}

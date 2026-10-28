@@ -1,0 +1,74 @@
+{
+  "rows": 80,
+  "response": {
+    "linear": "piecewise-linear response",
+    "nodes": "piecewise-cubic node response; public label cubic"
+  },
+  "phase_status": {
+    "prior_used": "Retained parameter points from the original calculations; not newly collected validation data."
+  },
+  "construction_role": {
+    "discovery": "development/discovery point",
+    "finite_grid_confirmation": "registered confirmation in the preceding finite-grid phase"
+  },
+  "exact_rationals": [
+    "Z",
+    "bias",
+    "beta",
+    "failure",
+    "T_mean"
+  ],
+  "head_calls": "Computed head label calls, equal to program observable.head_labels; included once in total label queries.",
+  "artifact_ids": "Paths relative to this release root; SHA256 columns hash the actual released file bytes.",
+  "source_provenance": "provenance.json binds original and released bytes; normalized paths/hash bindings do not assert byte identity.",
+  "normalization": "beta is all-label observable bias; Z is normalization. lambda is the heat resolvent parameter.",
+  "metrics": "Computed logical gate counts and conservative depths under the stated scheduling assumptions; not hardware timing.",
+  "submission_status": {
+    "prior_used": "Historical provenance label for retained parameter points; not a journal submission or author-approval status."
+  },
+  "S": "Retained grid-refinement factor. For the randomized route, the number of possible grid shifts, with one selected per execution; for the padded route, the corresponding coherent grid-refinement factor.",
+  "manuscript_notation": {
+    "raw_S": "S_g in the manuscript (TeX: S_{\\rm g}), the grid cardinality; the cycle-shift operator remains S.",
+    "cell_bit_precision": "g_cell in the manuscript (TeX: g_{\\rm cell}); the decision gap remains g."
+  },
+  "P": "Phase-estimation clock support and controlled-time length. The Fourier measurement has P outcomes for the randomized route and S*P outcomes for the padded route; the controlled powers use P-1 oracle calls in either case.",
+  "K": "Number of independent readout repetitions. The randomized route draws a fresh independent grid shift for each repetition.",
+  "compiled_record_terms": {
+    "word": "compiled gate sequence",
+    "native": "compiled gate sequence in the declared logical gate set",
+    "nodes": "piecewise-cubic response"
+  },
+  "resource_columns": {
+    "queries": "Total label queries, including the exact head calls and readout queries.",
+    "longest_chain": "Maximum consecutive oracle calls in one coherent execution.",
+    "T_worst": "Worst-case T count over the declared randomized readout choices.",
+    "T_depth_worst": "Worst-case T depth under the program's explicit scheduling rules.",
+    "nonoracle_depth_worst": "Worst-case nonoracle depth under the explicit scheduling rules.",
+    "width": "Allocated logical qubits."
+  },
+  "revision_bounds": {
+    "file": "revision_bounds.csv",
+    "rows": 3,
+    "relationship": "Separate from the original 80-row resources.csv; no historical resource rows changed.",
+    "query_count": "Worst-case query lower bound or the stated algorithm upper bound, as selected by bound_type; not a runtime or optimum estimate.",
+    "n": "Address-register bit length; N=2^n.",
+    "N": "Implicit cycle/address-space size, written as an exact decimal integer.",
+    "tau_lambda_eta": "Exact heat, regularization and off-grid interpolation parameters.",
+    "gamma": "Raw score promise margin, exact rational.",
+    "delta": "Per-input failure target. The compiled row also retains its stated conditional logical-failure assumption.",
+    "head_queries": "Actual queried head for upper-bound algorithms; blank for the lower-bound theorem.",
+    "tail_samples": "Classical importance samples; blank when not applicable.",
+    "coherent_queries": "Compiled coherent label calls; blank when not applicable.",
+    "certificate_artifact_id": "Archive-relative scalar output, historical finite certificate, or compiled program record. Analytic theorems are not formally proved by these records.",
+    "scope": "Access/cost model and interpretation.",
+    "notes": "Additional finite parameters and guarantee limitations."
+  },
+  "normalization_sensitivity": {
+    "file": "NEW_BOUND_CERTIFICATES/normalization_sensitivity.json",
+    "compiled_baseline": "Same public observable parameters; P8192 is a certificate check, not a new compiled receipt.",
+    "ideal_exact_tail_and_head": "Hypothetical exact-weight tail source, inverse/reflection and public threshold arithmetic; beta=0.",
+    "Z_role": "For the ideal rows, Z is an upper bound used only in the gap certificate. The actual exact mass is used in the source and decoder.",
+    "universal_probability_cap": "The sufficient certificate does not pass; this is not an impossibility result.",
+    "cost_status": "Only the P16384 clock/ramp/inverse-QFT synthesis allowance is reused. No exact-source gate/depth/width/preprocessing cost is certified."
+  }
+}

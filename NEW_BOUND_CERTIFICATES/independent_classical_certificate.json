@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "arithmetic": "all certifying comparisons exact rational",
+  "analytic_scope": "conditional on analytic derivations in the manuscript; ideal public-preprocessing label-query model",
+  "pi": {
+    "lower_exact": "3141592653589793238462643383279/1000000000000000000000000000000",
+    "upper_exact": "39269908169872415480783042291/12500000000000000000000000000",
+    "lower_display": 3.141592653589793,
+    "upper_display": 3.141592653589793
+  },
+  "E3_upper": "3802766392000493122429896427141/500000000000000000000000000000",
+  "kappa_upper": "227622608921705851764358315255635880881/5000000000000000000000000000000000000000",
+  "N": "295147905179352825856",
+  "R": 410562,
+  "head_queries": 821124,
+  "tail_component_bounds": [
+    {
+      "shift": "3/8",
+      "bound": "1322559907309437455474417267921/40000000000000000000000000000"
+    },
+    {
+      "shift": "5/8",
+      "bound": "1653199853690688258442329837717/50000000000000000000000000000"
+    }
+  ],
+  "tail_upper_before_rounding": "602089067579361265402856772203/200000000000000000000000000000",
+  "tail_mass_rational_upper": "1505223/500000",
+  "samples_real_threshold": {
+    "lower_exact": "1696854866813844081711639729553376449/125000000000000000000000000000",
+    "upper_exact": "13574838934510752653693117836427011593/1000000000000000000000000000000",
+    "lower_display": 13574838.934510753,
+    "upper_display": 13574838.934510753
+  },
+  "sample_queries": 13574839,
+  "total_query_upper": 14395963,
+  "g": "474260614964822069087137514832111/1232801243759633083295334400000000000",
+  "q8192": {
+    "lower_exact": "50157290924326561488632424749/100000000000000000000000000000",
+    "upper_exact": "501572909243265614886324247491/1000000000000000000000000000000",
+    "lower_display": 0.5015729092432656,
+    "upper_display": 0.5015729092432656
+  },
+  "q16384": {
+    "lower_exact": "1003145818486531229772648494981/1000000000000000000000000000000",
+    "upper_exact": "501572909243265614886324247491/500000000000000000000000000000",
+    "lower_display": 1.0031458184865312,
+    "upper_display": 1.0031458184865312
+  },
+  "P_three_quarter_threshold": {
+    "lower_exact": "12249465405277951856359734120938913/1000000000000000000000000000000",
+    "upper_exact": "6124732702638975928179867060469457/500000000000000000000000000000",
+    "lower_display": 12249.465405277952,
+    "upper_display": 12249.465405277952
+  },
+  "runtime_coefficients": {
+    "T_zero_coherent_price": {
+      "exact": "137096417/468615",
+      "display": 292.55661257108716
+    },
+    "T_equal_oracle_prices": {
+      "exact": "137096417/452232",
+      "display": 303.1550553698102
+    },
+    "coherent_to_classical_price_asymptote": {
+      "exact": "156205/5461",
+      "display": 28.603735579564184
+    },
+    "public_layers_zero_coherent_price": {
+      "exact": "82983422/93723",
+      "display": 885.4114998452887
+    }
+  },
+  "IQAE_boundary_diagnostic_not_certificate": {
+    "epsilon": 0.00019235080162576944,
+    "alpha": 0.0296,
+    "theorem_Q_bound_display": 1741000.5596512433,
+    "caution": "excludes initialization/predicate shot costs; epsilon=g/2 is only a boundary diagnostic"
+  }
+}

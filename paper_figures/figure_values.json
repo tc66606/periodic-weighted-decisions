@@ -1,0 +1,69 @@
+{
+  "figure": "Figure 3",
+  "source_sha256": {
+    "controls.csv": "307a2b45e29b06adeeb973212e60365d5abb23a6e233b132a9b5346837edd413",
+    "resources.csv": "02d5b9a2c31780c996e1610bce7656453c880a9d2369dff3f42b29f21a1fb6ac"
+  },
+  "source_row_counts": {
+    "controls.csv": 12,
+    "resources.csv": 80
+  },
+  "selection": "Principal n=68 cubic-response comparison; four routes, S=4 for randomized and padded routes",
+  "records": [
+    {
+      "source": "controls.csv",
+      "tag": "discovery_n68",
+      "response": "nodes",
+      "route": "standard_sign",
+      "P": 16384,
+      "K": 3,
+      "S": null,
+      "T": 725638197,
+      "maximum_consecutive_oracle_calls": 16383,
+      "allocated_logical_qubits": 586
+    },
+    {
+      "source": "controls.csv",
+      "tag": "discovery_n68",
+      "response": "nodes",
+      "route": "sine_sign",
+      "P": 32768,
+      "K": 1,
+      "S": null,
+      "T": 483761943,
+      "maximum_consecutive_oracle_calls": 32767,
+      "allocated_logical_qubits": 587
+    },
+    {
+      "source": "resources.csv",
+      "tag": "discovery_n68",
+      "response": "nodes",
+      "route": "randomized",
+      "P": 16384,
+      "K": 1,
+      "S": 4,
+      "T": 241883741,
+      "maximum_consecutive_oracle_calls": 16383,
+      "allocated_logical_qubits": 586
+    },
+    {
+      "source": "resources.csv",
+      "tag": "discovery_n68",
+      "response": "nodes",
+      "route": "padded",
+      "P": 16384,
+      "K": 1,
+      "S": 4,
+      "T": 241887769,
+      "maximum_consecutive_oracle_calls": 16383,
+      "allocated_logical_qubits": 588
+    }
+  ],
+  "panels": [
+    "Complete public T count in millions",
+    "Maximum consecutive oracle calls"
+  ],
+  "width_data": "Retained in manuscript Table 2 and in the records above; not plotted in Figure 3",
+  "statistics": "Deterministic certified resource counts; no sampling intervals",
+  "matplotlib_version": "3.10.7"
+}

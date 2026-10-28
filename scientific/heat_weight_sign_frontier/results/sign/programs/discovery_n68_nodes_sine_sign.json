@@ -1,0 +1,182 @@
+{
+  "schema": "finite_sign_qpe_v1",
+  "tag": "discovery_n68",
+  "response": "nodes",
+  "route": "sine_sign",
+  "contract": {
+    "raw_margin": ".002",
+    "bias_cap": ".0002",
+    "total_failure": ".05",
+    "logical_reserve": ".01",
+    "input_access": "shared unknown XOR binary-label oracle"
+  },
+  "observable": {
+    "raw_path": "../heat_weight_coordinate_frontier/results/coordinate/discovery_n68_nodes_parallel_raw.json.gz",
+    "raw_sha256": "5d0842cd0f57882726fbd539f2ac3492fa24bd359bb98a6e26e98ca680ed9c41",
+    "native_path": "../heat_weight_coordinate_frontier/results/coordinate/discovery_n68_nodes_parallel_word.json.gz",
+    "native_sha256": "101c91848288c9cd2b48b7a5f8270d3df3fddd4429ab2a6ed9555ec1eed0ddcc",
+    "Z": "89698095963077/17592186044416",
+    "bias": "9526344324642785082651101421525323496730974736209281907924500306010481492815711998273942636494221105792232157705895197311406482438484549/247411381879346477568346449831851458560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "head_labels": 4096,
+    "head_preprocessing": {
+      "head_entries": 4096,
+      "head_label_queries": 4096,
+      "head_numerical_weight_storage_bits": 200704,
+      "head_explicit_address_and_weight_bits": 479232,
+      "classical_accumulator_bits_sufficient": 61,
+      "original_descriptor_radius": 128,
+      "coefficient_degree": 25,
+      "extra_cardinal_weight_evaluations": 3840,
+      "extra_weight_generation_seconds": 0.38079389999620616,
+      "extra_head_rounding_error_upper": "17245958924769167349344454721210259615659559529800215867646056939827618293662210546929616477/5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "head_weight_label_products": 4096,
+      "head_scalar_additions": 4095,
+      "coefficient_generation": "Actual tuple-specific interval descriptor generated once, then bq-only public weights beyond its original radius. Its original omitted smooth residual stays charged for every R."
+    }
+  },
+  "reflection": "G=R_psi D_y; relevant eigenphases +/-phi; implemented tail mean=Z*cos(phi). Literal accepted inverse and source reflection retained.",
+  "P": 32768,
+  "K": 1,
+  "clock": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_clock_m15.json.gz",
+    "sha256": "54699a582a90e08e6c7b83f53fa62afd0b0f6d7b52585391fc26aca725bcd36e"
+  },
+  "phase_wires": [
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586
+  ],
+  "initial_source_key": "initial_preparation",
+  "iterate_key": "controlled_iterate",
+  "outer_control_port": 485,
+  "powers": [
+    {
+      "control_wire": 572,
+      "repeat": 1,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 573,
+      "repeat": 2,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 574,
+      "repeat": 4,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 575,
+      "repeat": 8,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 576,
+      "repeat": 16,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 577,
+      "repeat": 32,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 578,
+      "repeat": 64,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 579,
+      "repeat": 128,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 580,
+      "repeat": 256,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 581,
+      "repeat": 512,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 582,
+      "repeat": 1024,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 583,
+      "repeat": 2048,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 584,
+      "repeat": 4096,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 585,
+      "repeat": 8192,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    },
+    {
+      "control_wire": 586,
+      "repeat": 16384,
+      "operation": "accepted_controlled_iterate_with_outer_port_remapped"
+    }
+  ],
+  "inverse_qft": {
+    "path": "../heat_weight_sign_frontier/results/sign/inverse_qft_m15.json.gz",
+    "sha256": "441a4378b742c448b296d3e3b0c8434ca2e073d3675143e9aed3fcae95e1deb7"
+  },
+  "local_wire_mapping": "Clock and inverse-QFT local bit j maps to phase_wires[j]; little-endian integer j=sum(2^k*bit_k).",
+  "decoder": {
+    "path": "../heat_weight_coordinate_frontier/src/statistic/finite_decoder.py",
+    "sha256": "60cf456e5fcceb6a31fd8612ab3f0d729e3107f6b317629666e9ad38f96c797a",
+    "callable": "signed_mean(outcome,phase_size,bits=48)",
+    "score_callable": "decode_score(outcomes,phase_size,normalization,known_head)",
+    "output": "Return +1 if decode_score >= 0, otherwise -1. Ties counted as failures in proof.",
+    "arithmetic": "Exact rational degree-64 cosine, nearest dyadic48 fractional bits; head sum exact on raw head_coefficients; independent odd K median."
+  },
+  "finite_certificate": {
+    "path": "../heat_weight_sign_frontier/results/sign/blind_sine_native.json",
+    "key": [
+      "discovery_n68",
+      "nodes"
+    ]
+  },
+  "error": {
+    "statistical": "358454282897787973834232131303941714153292788693954566802301967820879680643174883528848406480371586331478551032280259455015393195938008823627624996959214933582482779326496438071483645772517826162628792764021201221929801357190313121129902568129451895226339305398646343663603807117988395892736/60663986604798009593130668927096744640453425769620572386195136091596147928878680840538490400200142518619251348329047091042024669665632972652621370381575341525353264669328444811525684926858218111797595051993302082643226441467540746811180435955785428703395802263150494643359366731630219556616281",
+    "clock_operator": "75782301916993272775033881766768733678014274256720610202641580233904367/50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "qft_operator": "21016361728372200338933475043069927010408052093771/1250000000000000000000000000000000000000000000000000000",
+    "total": "24178355772355612545631254410481090539517915118610160221616820350335788396827079740024903942471596086216719019331867257217051475025783802537644312497899972026657070738251377034226323872992610636707071784023505152021719158393892272486202526450674401737193763130646618972617609723127949588493392460583683308278164182776301675327260911430898483728329833858019025331869199127/1516599665119950239828266723177418616011335644240514309654878402289903698221967021013462260005003562965481283708226177276050616741640824316315534259539383538133831616733211120288142123171455452794939876299832552066080661036688518670279510898894635717584895056578762366083984168290755488915407025000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "accounting": "Measured head once; initialize source and clock each independent run; all powers and inverse-QFT each run. Initial source and clock serially bounded. Opaque oracle interiors excluded. Reserved old outer port not reclaimed.",
+  "resources": {
+    "T_count": 483761943,
+    "nonoracle_gates": 1441838619,
+    "T_depth_upper": 274184203,
+    "nonoracle_depth_upper": 829816404,
+    "allocated_width": 587,
+    "optimal_active_width": null,
+    "label_queries": 36863,
+    "coherent_label_queries": 32767,
+    "maximum_sequential_label_calls": 32767,
+    "number_of_runs": 1,
+    "maximum_single_run_T_depth": 274184203,
+    "maximum_single_run_nonoracle_depth": 829816404
+  }
+}
