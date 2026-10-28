@@ -109,11 +109,10 @@ to their original research-repository counterparts.
 
 Annan Chen, Department of Physics, Imperial College London, London, United Kingdom.
 ORCID: https://orcid.org/0009-0000-1308-0466. Contact: annan.chen24@imperial.ac.uk.
-The author formulated the question and comparison criteria, reviewed and revised
+The author formulated the original idea and comparison criteria, reviewed and revised
 derivations, checked literature and mathematical certificates, ran code, and
 reviewed the manuscript. OpenAI Codex and ChatGPT assisted with constructions,
-proof drafts, implementation, numerical certification, analysis and writing,
-including figure-generation code. The author is responsible for the content.
+proof drafts, numerical certification and writing. The author is responsible for the content.
 
 Original code is licensed under MIT; original data, certificates and documentation
 are licensed under CC BY 4.0. See `LICENSE.md`, `license_map.csv` and
