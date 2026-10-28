@@ -8,15 +8,8 @@ Circuits for Periodic Weighted Decisions**, by Annan Chen. Software version 2.0.
 - Software version: **2.0.0**; version DOI: <https://doi.org/10.5281/zenodo.23736017>.
 - Repository: <https://github.com/tc66606/periodic-weighted-decisions>.
 - Clone address: `https://github.com/tc66606/periodic-weighted-decisions.git`.
-- Related existing manuscript: Research Square v1,
+- Manuscript: this release accompanies version 2. Version 1 is on Research Square,
   <https://doi.org/10.21203/rs.3.rs-11513670/v1>.
-
-Software version 2.0.0 and the planned Research Square manuscript v2 are separate
-version identifiers. The DOI and repository addresses were supplied by the
-author. Inclusion here identifies the intended archive and repository; it does
-not establish that either is publicly accessible. The release can be verified
-locally using the commands below. No new manuscript-version URL is assigned by
-this archive.
 
 ## Contents
 
@@ -111,8 +104,10 @@ Annan Chen, Department of Physics, Imperial College London, London, United Kingd
 ORCID: https://orcid.org/0009-0000-1308-0466. Contact: annan.chen24@imperial.ac.uk.
 The author formulated the original idea and comparison criteria, reviewed and revised
 derivations, checked literature and mathematical certificates, ran code, and
-reviewed the manuscript. OpenAI Codex and ChatGPT assisted with constructions,
-proof drafts, numerical certification and writing. The author is responsible for the content.
+reviewed the manuscript. OpenAI Codex and ChatGPT assisted with research planning,
+algorithmic constructions, proof drafts, software implementation (including
+figure-generation code), numerical certification, resource and literature analysis,
+and drafting and editing of the manuscript. The author is responsible for the content.
 
 Original code is licensed under MIT; original data, certificates and documentation
 are licensed under CC BY 4.0. See `LICENSE.md`, `license_map.csv` and

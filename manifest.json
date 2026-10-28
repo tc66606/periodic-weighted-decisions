@@ -119,8 +119,8 @@
     },
     {
       "artifact_id": "README.md",
-      "sha256": "a23c6c249f205e7a133e0d6ab730d3dbcf30b3aeff3e0cdb5cdc893ba6b6d409",
-      "bytes": 6920
+      "sha256": "b2c5e87d162bc4ef37f0ddfe47d67fbbee2b9540c3d6b3e75bda1f65483c01f3",
+      "bytes": 6646
     },
     {
       "artifact_id": "release_metadata.json",
